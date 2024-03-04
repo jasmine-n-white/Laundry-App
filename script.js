@@ -26,10 +26,10 @@ console.log("| - 🧸 Softener:          $1.00 per load  |");
 console.log("| - 🧺 Dryer Sheets:      $0.50 each      |");
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
-let colorPrice = 2.5;
-let whitePrice = 4;
-let darkPrice = 6;
-
 let colorPounds = prompt("How many pounds of color clothes would you like to wash?");
 let whitePounds = prompt("How many pounds of white clothes would you like to wash?");
 let darkPounds = prompt("How many pounds of dark clothes would you like to wash?");
+
+let colorPrice = Number(colorPounds) * 2.5;
+let whitePrice = Number(whitePounds) * 4;
+let darkPrice = Number(darkPounds) * 6;
