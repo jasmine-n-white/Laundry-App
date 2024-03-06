@@ -70,25 +70,40 @@ let darkPrice = Number(darkPounds) * 6;
 
 let detergentPrice;
 let softenerPrice;
+let detergentLoads;
+let softenerLoads;
 
 let detergent = prompt("Do you need detergent (true/false)?");
 if (detergent == "true") {
     detergentPrice = 1.5 * loads;
+    detergentLoads = loads;
 } else {
     detergentPrice = 0;
+    detergentLoads = 0;
 }
 let softener = prompt("Do you need fabric softener (true/false)?");
 if (softener == "true") {
     softenerPrice = 1 * loads;
+    softenerLoads = loads;
 } else {
     softenerPrice = 0;
+    softenerLoads = 0;
 }
 let dryerSheets = prompt("How many dryer sheets per drying load?");
 let dryerSheetPrice = Number(dryerSheets) * loads * 0.5;
-dryerSheetPrice = parseFloat(dryerSheetPrice);
+// dryerSheetPrice = parseFloat(dryerSheetPrice);
 
+console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+console.log("|                Receipt                   |");
+console.log("------------------------------------------");
+console.log("| Services:                              |");
+console.log(`| - 🌈 Color Load:        ${colorPounds}lbs  $${colorPrice.toFixed(2)} |`);
+console.log(`| - ⚪ Whites Load:       ${whitePounds}lbs   $${whitePrice.toFixed(2)} |`);
+console.log(`| - ⚫ Darks Load:        ${darkPounds}lbs   $${darkPrice.toFixed(2)} |`);
+console.log("|----------------------------------------|");
+console.log("| Additional Services:                   |");
+console.log(`| - 🧼 Detergent:      ${detergentLoads} loads $${detergentPrice.toFixed(2)}    |`);
+console.log(`| - 🧸 Softener:        ${softenerLoads} loads $${softenerPrice.toFixed(2)} |`);
+console.log(`| - 🧺 Dryer Sheets:      ${loads} loads $${dryerSheetPrice.toFixed(2)}  |`);
+console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
-console.log(dryerSheetPrice);
-console.log(softenerPrice);
-console.log(detergentPrice);
-console.log(loads);
