@@ -91,8 +91,8 @@ if (softener == "true") {
 }
 let dryerSheets = prompt("How many dryer sheets per drying load?");
 let dryerSheetPrice = Number(dryerSheets) * loads * 0.5;
-// dryerSheetPrice = parseFloat(dryerSheetPrice);
 
+let totalCost = colorPrice + whitePrice + darkPrice + detergentPrice + softenerPrice + dryerSheetPrice;
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 console.log("|                Receipt                   |");
 console.log("------------------------------------------");
@@ -105,5 +105,6 @@ console.log("| Additional Services:                   |");
 console.log(`| - 🧼 Detergent:      ${detergentLoads} loads $${detergentPrice.toFixed(2)}    |`);
 console.log(`| - 🧸 Softener:        ${softenerLoads} loads $${softenerPrice.toFixed(2)} |`);
 console.log(`| - 🧺 Dryer Sheets:      ${loads} loads $${dryerSheetPrice.toFixed(2)}  |`);
+console.log(`| Subtotal:            $${totalCost.toFixed(2)}|`);
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
