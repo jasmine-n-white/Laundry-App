@@ -111,7 +111,7 @@ console.log("|---------------------------------------------|");
 console.log("| Additional Services:                        |");
 console.log(`  - 🧼 Detergent:      ${detergentLoads} loads $${detergentPrice.toFixed(2)}`);
 console.log(`  - 🧸 Softener:       ${softenerLoads} loads $${softenerPrice.toFixed(2)}`);
-console.log(`  - 🧺 Dryer Sheets:   ${totalDryerSheets} dryer sheets $${dryerSheetPrice.toFixed(2)}`);
+console.log(`  - 🧺 Dryer Sheets:   ${totalDryerSheets} sheets $${dryerSheetPrice.toFixed(2)}`);
 console.log(`   Subtotal:             $${totalCost.toFixed(2)}`);
 console.log(`   Total:                $${totalCost.toFixed(2)}`);
 console.log("|     Thank you, have a nice day! <(^-^)>     |");
