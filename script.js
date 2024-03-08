@@ -109,7 +109,7 @@ console.log("| Services:                                   |");
 console.log(`  - 🌈 Color Load:   ${colorPounds}lbs   $${colorPrice.toFixed(2)}`);
 console.log(`  - ⚪ Whites Load:  ${whitePounds}lbs   $${whitePrice.toFixed(2)}`);
 console.log(`  - ⚫ Darks Load:   ${darkPounds}lbs   $${darkPrice.toFixed(2)}`);
-console.log(`  -    Dryer Loads:  ${loads} loads $${dryerPrice.toFixed(2)}`);
+console.log(`  -   Dryer Loads:  ${loads} loads $${dryerPrice.toFixed(2)}`);
 console.log("|---------------------------------------------|");
 console.log("| Additional Services:                        |");
 console.log(`  - 🧼 Detergent:      ${detergentLoads} loads $${detergentPrice.toFixed(2)}`);
