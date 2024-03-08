@@ -114,6 +114,6 @@ console.log(`  - 🧸 Softener:       ${softenerLoads} loads $${softenerPrice.to
 console.log(`  - 🧺 Dryer Sheets:   ${totalDryerSheets} dryer sheets $${dryerSheetPrice.toFixed(2)}`);
 console.log(`   Subtotal:             $${totalCost.toFixed(2)}`);
 console.log(`   Total:                $${totalCost.toFixed(2)}`);
-console.log("|     Thank you, have a nice day! <(^-^)>    |");
-console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+console.log("|     Thank you, have a nice day! <(^-^)>     |");
+console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
