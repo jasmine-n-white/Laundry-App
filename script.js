@@ -101,6 +101,9 @@ let dryerSheetPrice = Number(dryerSheets) * loads * 0.5;
 let totalCost = colorPrice + whitePrice + darkPrice + dryerPrice + detergentPrice + softenerPrice + dryerSheetPrice;
 
 console.log("\n");
+console.log("Thank you! Here is your receipt:");
+console.log("\n");
+
 //Printed receipt
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 console.log("|                   Receipt                   |");
@@ -115,8 +118,10 @@ console.log("| Additional Services:                        |");
 console.log(`  - 🧼 Detergent:      ${detergentLoads} loads      $${detergentPrice.toFixed(2)}`);
 console.log(`  - 🧸 Softener:       ${softenerLoads} loads      $${softenerPrice.toFixed(2)}`);
 console.log(`  - 🧺 Dryer Sheets:   ${totalDryerSheets} sheets    $${dryerSheetPrice.toFixed(2)}`);
+console.log("|                                             |");
 console.log(`   Subtotal:                        $${totalCost.toFixed(2)}`);
 console.log(`   Total:                           $${totalCost.toFixed(2)}`);
+console.log("|                                             |");
 console.log("|     Thank you, have a nice day! <(^-^)>     |");
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
