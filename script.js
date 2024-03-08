@@ -19,6 +19,7 @@ console.log("| Services:                                  |");
 console.log("  - 🌈 Color Load:        $2.50 per pound    ");
 console.log("  - ⚪ Whites Load:       $4.00 per pound    ");
 console.log("  - ⚫ Darks Load:        $6.00 per pound    ");
+console.log("  -   Dryers:             $4.00 per load     ");
 console.log("|--------------------------------------------|");
 console.log("| Additional Services:                       |");
 console.log("  - 🧼 Detergent:         $1.50 per load     ");
@@ -70,6 +71,7 @@ let totalPounds = colorPounds + whitePounds + darkPounds;
 let colorPrice = Number(colorPounds) * 2.5;
 let whitePrice = Number(whitePounds) * 4;
 let darkPrice = Number(darkPounds) * 6;
+let dryerPrice = loads * 4;
 
 let detergentPrice;
 let softenerPrice;
@@ -96,7 +98,7 @@ let dryerSheets = prompt("How many dryer sheets per drying load? ");
 let totalDryerSheets = dryerSheets * loads;
 let dryerSheetPrice = Number(dryerSheets) * loads * 0.5;
 //Total cost calculated
-let totalCost = colorPrice + whitePrice + darkPrice + detergentPrice + softenerPrice + dryerSheetPrice;
+let totalCost = colorPrice + whitePrice + darkPrice + dryerPrice + detergentPrice + softenerPrice + dryerSheetPrice;
 
 console.log("\n");
 //Printed receipt
@@ -107,6 +109,7 @@ console.log("| Services:                                   |");
 console.log(`  - 🌈 Color Load:   ${colorPounds}lbs   $${colorPrice.toFixed(2)}`);
 console.log(`  - ⚪ Whites Load:  ${whitePounds}lbs   $${whitePrice.toFixed(2)}`);
 console.log(`  - ⚫ Darks Load:   ${darkPounds}lbs   $${darkPrice.toFixed(2)}`);
+console.log(`  -    Dryer Loads:  ${loads} loads $${dryerPrice.toFixed(2)}`);
 console.log("|---------------------------------------------|");
 console.log("| Additional Services:                        |");
 console.log(`  - 🧼 Detergent:      ${detergentLoads} loads $${detergentPrice.toFixed(2)}`);
