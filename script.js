@@ -19,7 +19,7 @@ console.log("| Services:                                  |");
 console.log("  - 🌈 Color Load:        $2.50 per pound    ");
 console.log("  - ⚪ Whites Load:       $4.00 per pound    ");
 console.log("  - ⚫ Darks Load:        $6.00 per pound    ");
-console.log("  -   Dryers:             $4.00 per load     ");
+console.log("  -    Dryers:            $4.00 per load     ");
 console.log("|--------------------------------------------|");
 console.log("| Additional Services:                       |");
 console.log("  - 🧼 Detergent:         $1.50 per load     ");
